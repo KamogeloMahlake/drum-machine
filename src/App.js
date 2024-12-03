@@ -59,7 +59,7 @@ class App extends React.Component {
         soundid: currentButton.id
       });
       audio.play();
-
+      
     }
   }
   handleKeyPress(event) {
@@ -69,6 +69,11 @@ class App extends React.Component {
         soundid: sound.parentElement.id
       })
       sound.play();
+      sound.parentElement.classList.toggle('click');
+
+      setTimeout(() =>  {
+        sound.parentElement.classList.toggle('click');
+        }, 300);
     }
   }
   handleKit() {

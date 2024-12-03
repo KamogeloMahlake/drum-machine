@@ -23,7 +23,7 @@ body {
 }
 .drum-pad {
   padding: 10px;
-  background-color: lightblue;
+  background-color: lightblue;;
 }
 
 #display {
@@ -31,4 +31,17 @@ body {
 }
 h1 {
   color: white;
+}
+.drum-pad:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.click {
+  background-color: darkblue;
+  color: white;
+}
+button {
+  cursor: pointer;
+
 }
